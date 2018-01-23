@@ -5,8 +5,8 @@ using UnityEngine;
 public class Grid : MonoBehaviour {
 
     public GameObject TilePrefab;
-    public int X = 2;
-    public int Y = 3;
+    public int x = 2;
+    public int z = 3;
 
     private void Start()
     {
@@ -21,7 +21,7 @@ public class Grid : MonoBehaviour {
         {
             for (int y = 0; y < 4; y++)
             {
-                Instantiate(TilePrefab, new Vector3(x * size, transform.position.y, z * size), transform.rotation, transform)
+                Instantiate(TilePrefab, new Vector3(x * size, transform.position.y, z * size), transform.rotation, transform);
             }
         }
     }
